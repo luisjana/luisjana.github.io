@@ -1,0 +1,271 @@
+/* Pjesa e përgjithshme */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+.logo {
+    height: 60px; /* Mund të përshtatësh madhësinë sipas nevojës */
+    width: auto;
+}
+
+
+header {
+    background: rgba(46, 139, 87, 0.9); /* E gjelbër me një transparencë për një pamje më të butë */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Hapësirë më e madhe mes elementeve */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 0.5rem;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Ngjyrë e artë për efekt hover */
+    border-bottom: 2px solid #ffcc00; /* Vijë poshtë lidhjes për efekt hover */
+}
+
+.hero-section {
+    
+    background: url('img/projektb.jpg') no-repeat center center/cover;
+
+
+    color: #fff; /* Ndryshuar për të qenë në kontrast me background-in e errët */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #3CB371; /* E gjelbër më e lehtë për të përmirësuar ndjeshmërinë vizuale */
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6); /* Sigurimi i një kontrarasti të mirë për tekstin */
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1, .hero-content p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.sections-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem; /* Hapësirë mes seksioneve */
+    padding: 2rem;
+    flex-wrap: wrap; /* Siguron që seksionet të kalojnë në rresht të ri në ekrane më të ngushta */
+}
+
+.about-section, .projects-section, .contact-section {
+    flex: 1; /* Pjesëmarrës të barabartë në disponueshmërinë e hapësirës */
+    min-width: 300px; /* Siguron që seksionet të jenë të pakufizuara në hapësirën minimale */
+    padding: 2rem;
+    background: #fff;
+    margin: 1rem;
+    text-align: center;
+    border-left: 8px solid #3CB371; /* E gjelbër më e lehtë */
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background: #2E8B57; /* Ndryshohet në të gjelbër të mbyllur */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    font-size: 1.1rem;
+    color: #2E8B57;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button[type="submit"], .btn {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 1rem;
+    background: #2E8B57; /* Ndryshohet në të gjelbër të mbyllur */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button[type="submit"]:hover, .btn:hover {
+    background: #205623; /* E gjelbër më e errët për efekt hover */
+}
+
+.intro-paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    text-align: justify;
+    color: #f4f4f4;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem 0.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero-section {
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .hero-content {
+        padding: 1.5rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .about-section, .projects-section, .contact-section {
+        padding: 2rem 1rem;
+        margin: 0; /* Hiqet margini për të shfrytëzuar hapësirën në ekranet e vogla */
+    }
+}
+
+
+p8 {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #f4eded; /* Ngjyrë e errët për tekstin */
+    text-align: justify;
+}
+.about-section {
+    padding: 4rem 2rem;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem; /* Rritet madhësia e titullit kryesor */
+    color: #2E8B57; /* Ngjyrë e gjelbër e errët për titujt kryesorë */
+}
+
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.content-block {
+    flex: 1 1 30%;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem; /* Hapësirë nën secilin bllok për të parandaluar që të duken të ngjeshur */
+}
+
+h3 {
+    font-size: 1.75rem; /* Rritet madhësia e titujve të nënseksioneve */
+    margin-bottom: 1rem;
+    color: #2E8B57; /* Ngjyrë e gjelbër e errët për titujt e nënseksioneve */
+    border-bottom: 2px solid #2E8B57; /* Shtoni një linjë të hollë nën tituj për ndarje më të mirë */
+    padding-bottom: 0.5rem; /* Hapësirë poshtë titujve për të theksuar ndarjen */
+}
+
+p {
+    font-size: 1.125rem; /* Rritet madhësia e tekstit për lexim më të lehtë */
+    line-height: 1.6;
+    color: #666; /* Ngjyrë më të ndritshme për tekstin */
+    text-align: justify; /* Rregullimi i tekstit për të mbushur hapësirën */
+    margin-bottom: 1rem; /* Hapësirë nën paragrafë për ndarje më të qartë */
+}
+
+/* Stili për ekranet e vogla */
+@media (max-width: 768px) {
+    .section-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .content-block {
+        flex: 1 1 100%;
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2rem; /* Rritet madhësia e titujve në ekranet e vogla */
+    }
+
+    h3 {
+        font-size: 1.5rem; /* Rritet madhësia e titujve të nënseksioneve në ekranet e vogla */
+    }
+}
